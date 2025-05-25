@@ -12,7 +12,7 @@ const char* WIFI_SSID     = "SSID";
 const char* WIFI_PASSWORD = "PASSWORD";
 
 // MQTT
-const char* MQTT_BROKER   = "iot.eclipse.org";
+const char* MQTT_BROKER   = "mqtt.eclipseprojects.io";
 const int   MQTT_PORT     = 1883;
 const char* MQTT_CLIENT_ID = "waterFlowMonitor";
 

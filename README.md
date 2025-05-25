@@ -2,7 +2,7 @@
 
 This project monitors water flow using an ESP32 and a YF-S201 sensor. It calculates real-time water usage and publishes the data to an MQTT broker. An LED is used to indicate when a defined water limit is exceeded.
 
-## Description
+## Features
 
 - Flow is measured in mL and L/min.
 - Values are sent to the MQTT broker every second.
@@ -28,14 +28,17 @@ This project monitors water flow using an ESP32 and a YF-S201 sensor. It calcula
 
 - Wi-Fi TCP/IP connection
 - MQTT protocol for data transmission
-- Tested with public broker: `iot.eclipse.org` (port 1883)
+- Tested with public broker: `mqtt.eclipseprojects.io` (port 1883)
+- Local testing also done using Mosquitto
 
 ## Getting Started
 
-1. Upload the code with Arduino IDE.
-2. Connect the sensor to GPIO 27 and LED to GPIO 17 (default).
-3. Configure Wi-Fi and MQTT broker in the code.
-4. Monitor flow and send limit via MQTT.
+1. Clone this repository.
+2. Open `main.ino` using the Arduino IDE.
+3. Configure your Wi-Fi credentials and MQTT broker address in the code.
+4. Connect the **YF-S201 sensor** to GPIO 27 and **LED** to GPIO 17 (default).
+5. Upload the code to your ESP32 board.
+6. Monitor published flow data and send limit values via MQTT.
 
 ## License
 
